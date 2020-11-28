@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Ecofreaks</title>
+
+    <!-- Bootstrap core CSS-->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Page level plugin CSS-->
+    <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+
+      <a class="navbar-brand mr-1" href="index.html">Ecofreaks</a>
+
+      <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Navbar Search -->
+      <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="button">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <!-- Navbar -->
+      <ul class="navbar-nav ml-auto ml-md-0">
+        <li class="nav-item dropdown no-arrow mx-1">
+          <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-bell fa-fw"></i>
+            <span class="badge badge-danger">9+</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown no-arrow mx-1">
+          <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-envelope fa-fw"></i>
+            <span class="badge badge-danger">7</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="messagesDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown no-arrow">
+          <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user-circle fa-fw"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+            <a class="dropdown-item" href="#">Settings</a>
+            <a class="dropdown-item" href="#">Activity Log</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
+            <a class="dropdown-item" href="aboutus.html">About Us</a>
+          </div>
+        </li>
+      </ul>
+
+    </nav>
+
+    <div id="wrapper">
+
+      <!-- Sidebar -->
+      <ul class="sidebar navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Pages</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+            <h6 class="dropdown-header">Login Screens:</h6>
+            <a class="dropdown-item" href="login.
+            html">Login</a>
+            <a class="dropdown-item" href="public/contribute.php">contribute</a>
+            <a class="dropdown-item" href="https://app.cpcbccr.com/AQI_India/#">Prediction Of AQI</a>
+            <a class="dropdown-item" href="register.html">Register</a>
+            <a class="dropdown-item" href="forgot-password.html">Forgot Password</a>
+            <div class="dropdown-divider"></div>
+            <h6 class="dropdown-header">Other Pages:</h6>
+            <a class="dropdown-item" href="404.html">404 Page</a>
+            <a class="dropdown-item" href="blank.html">Blank Page</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="charts.html">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>Charts</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="tables.html">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Tables</span></a>
+        </li>
+      </ul>
+
+      <div id="content-wrapper">
+
+        <div class="container-fluid">
+
+          <!-- Breadcrumbs-->
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="#">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item active">Tables</li>
+          </ol>
+
+          <!-- DataTables Example -->
+          <div class="card mb-3">
+            <div class="card-header">
+              <i class="fas fa-table"></i>
+              Data Table Example</div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Full Name</th>
+                      <th>Gender</th>
+                      <th>EmailId</th>
+                      <th>DOB</th>
+                      <th>MobileNo</th>
+                      <th>location</th>
+                      <th>Pincode</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th>Full Name</th>
+                      <th>Gender</th>
+                      <th>EmailId</th>
+                      <th>DOB</th>
+                      <th>MobileNo</th>
+                      <th>location</th>
+                      <th>Pincode</th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                      <td>Md Saif Ali</td>
+                      <td>Male</td>
+                      <td>vtu13539@veltech.edu.in</td>
+                      <td>2000-04-02</td>
+                      <td>7550118418</td>
+                      <td>sasaram</td>
+                      <td>821104</td>
+                    </tr>
+                    <tr>
+                      <td>Aditya Raj</td>
+                      <td>Male</td>
+                      <td>vtu14318@veltech.edu.in</td>
+                      <td>1989-11-12</td>
+                      <td>7535564558</td>
+                      <td>patna</td>
+                      <td>543454</td>
+                    </tr>
+                    <tr>
+                      <td>Nitin Kishore</td>
+                      <td>Male</td>
+                      <td>nitin42424@gmail.com</td>
+                      <td>1978-06-22</td>
+                      <td>7266656568</td>
+                      <td>hajipur</td>
+                      <td>545425</td>
+                    </tr>
+                    <tr>
+                      <td>sameer Anand</td>
+                      <td>Male</td>
+                      <td>sameer24254@gmail.com</td>
+                      <td>1991-11-07</td>
+                      <td>7823546328</td>
+                      <td>patna</td>
+                      <td>245645</td>
+                    </tr>
+                    <tr>
+                      <td>Anshara Khan</td>
+                      <td>Female</td>
+                      <td>anshara12343@gmail.com</td>
+                      <td>2000-06-24</td>
+                      <td>7354635968</td>
+                      <td>chennai</td>
+                      <td>600063</td>
+                    </tr>
+                    <tr>
+                      <td>Torredo</td>
+                      <td>Male</td>
+                      <td>torredo21@gmail.com</td>
+                     <td>1984-08-13</td>
+                      <td>7054645518</td>
+                      <td>Ahmadabad</td>
+                      <td>576459</td>
+                    </tr>
+                    <tr>
+                      <td>piyush pandit</td>
+                      <td>Male</td>
+                      <td>piyush2453@gmail.com</td>
+                     <td>2000-09-22</td>
+                      <td>9546456646</td>
+                      <td>Nagpur</td>
+                      <td>578578</td>
+                    </tr>
+                    <tr>
+                      <td>Manohar Kumar</td>
+                      <td>Male</td>
+                      <td>mano25@gmail.com</td>
+                      <td>2001-08-09</td>
+                      <td>7546545346</td>
+                      <td>Nalanda</td>
+                      <td>335452</td>
+                    </tr>
+                    <tr>
+                      <td>Mr potter</td>
+                      <td>Male</td>
+                      <td>potter454@gmail.com</td>
+                      <td>1998-12-21</td>
+                      <td>7066668418</td>
+                      <td>delhi</td>
+                      <td>543545</td>
+                    </tr>
+                    <tr>
+                      <td>Mr. Bond</td>
+                      <td>Male</td>
+                      <td>bond4534@gmail.com</td>
+                      <td>2000-08-23</td>
+                      <td>7241646596</td>
+                      <td>mumbai</td>
+                      <td>555664</td>
+                    </tr>
+                    <tr>
+                      <td>pratigya</td>
+                      <td>Female</td>
+                      <td>prati24543@gmail.com</td>
+                      <td>2001-09-24</td>
+                      <td>7550546466</td>
+                      <td>telangna</td>
+                      <td>354333</td>
+                    </tr>
+                    <tr>
+                      <td>Akshat Agrawal</td>
+                      <td>Male</td>
+                      <td>akshat354534@gmail.com</td>
+                      <td>1998-07-25</td>
+                      <td>9015643432</td>
+                      <td>patna</td>
+                      <td>576432</td>
+                    </tr>
+                    <tr>
+                      <td>Girish kumar</td>
+                      <td>Male</td>
+                      <td>giri5454@gmail.com</td>
+                      <td>1999-08-07</td>
+                      <td>7555686418</td>
+                      <td>vishakhapatnam</td>
+                      <td>464545</td>
+                    </tr>
+                    <tr>
+                      <td>Chandranil Bollam</td>
+                      <td>Male</td>
+                      <td>chandu5454@gmail.com</td>
+                      <td>1996-11-11</td>
+                      <td>7550576698</td>
+                      <td>chennai</td>
+                      <td>600063</td>
+                    </tr>
+                    <tr>
+                      <td>Utpal Sharma</td>
+                      <td>Male</td>
+                      <td>utpal2453454@gmail.com</td>
+                      <td>2002-08-05</td>
+                      <td>7550549418</td>
+                      <td>agra</td>
+                      <td>654354</td>
+                    </tr>
+                   
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="card-footer small text-muted">Updated today at 11:59 AM</div>
+          </div>
+
+          <p class="small text-center text-muted my-5">
+            <em>END OF PAGE </em>
+          </p>
+ 
+        </div>
+        <!-- /.container-fluid -->
+
+        <!-- Sticky Footer -->
+        <footer class="sticky-footer">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span>Copyright © Ecofreaks 2020</span>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+      <!-- /.content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Page level plugin JavaScript-->
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin.min.js"></script>
+
+    <!-- Demo scripts for this page-->
+    <script src="js/demo/datatables-demo.js"></script>
+
+  </body>
+
+</html>
